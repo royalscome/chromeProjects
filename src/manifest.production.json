@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "early morning",
+  "description": "提供实时天气，每日一首诗词，每日一句好句",
+  "icons": {
+    "16": "assets/icon/icon.png",
+    "38": "assets/icon/icon.png",
+    "76": "assets/icon/icon.png"
+  },
+  "version": "1.0.0",
+  "options_page": "options.html",
+  "browser_action": {
+    "default_title": "天气插件",
+    "default_icon": {
+      "16": "assets/icon/icon.png",
+      "38": "assets/icon/icon.png",
+      "76": "assets/icon/icon.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["assets/js/content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "page": "background.html"
+  },
+  "web_accessible_resources": ["assets/css/*"],
+  "permissions": [
+    "storage",
+    "notifications",
+    "tabs",
+    "bookmarks",
+    "http://myip.ipip.net/"
+  ]
+}
