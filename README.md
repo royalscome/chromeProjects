@@ -1,24 +1,21 @@
-# chromprojects
+# chromeprojects
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 打包并且可以实时更新包
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+yarn crx
 ```
 
-### Lints and fixes files
+### tips
 ```
-npm run lint
+在持续优化
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### tips
+```
+一款可以看看天气的小插件，附带摸鱼看视频功能，当然内网开发的同学应该和这个插件无缘了。目前只兼容B站视频，我会继续学习做出更实用的插件。
+```
